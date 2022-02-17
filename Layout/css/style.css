@@ -1,0 +1,415 @@
+.social-icons {
+  position: absolute;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  top: 5px;
+  right: 150px;
+}
+.logo-title {
+  margin-left: 17%;
+  margin-top: 3%;
+}
+.logotype1{
+    height: 30px;
+}
+header{
+    display: contents;
+}
+.link-media {
+  margin: auto 5px;
+}
+.fa {
+  color: #ed5900;
+}
+.orange-div {
+  height: 2px;
+  background-color: #ed5900;
+}
+body {
+  margin: 0px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+.img-separator-size {
+  width: 100%;
+}
+.separator-image {
+  margin-top: 50px;
+  height: 100px;
+  overflow: hidden;
+  object-fit: contain;
+  
+}
+.wrapper,
+.columns {
+  display: flex;
+}
+.col1 {
+  width: 100%;
+  padding-right: 4rem;
+}
+
+.columns {
+  margin: 2rem 0rem 0rem 25%;
+}
+.ebook {
+  position: absolute;
+  height: 280px;
+  margin-top: -4rem;
+  z-index: 1;
+  margin-left: 25rem;
+  
+}
+aside {
+  margin: 3% 15% 5% 0%;
+}
+h1,
+h4 {
+  color: #ed5900;
+  
+}
+.paragraph {
+  margin-top: 2rem;
+  line-height: 1.5;
+    font-weight: 500;
+    font-size: 13px;
+    color: hsl(0deg 0% 13%);
+}
+h1 {
+  width: 22rem;
+  margin-bottom: 3rem;
+  font-size: 25px;
+}
+h3 {
+  width: 20rem;
+  color: #acabab;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.form-control {
+  padding: 10px 18px 20px 18px;
+  background-color: #ececec;
+  width: 260px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.form-control > button {
+  align-content: c;
+  text-align: center;
+}
+fieldset {
+  border: none;
+  text-align: initial;
+}
+input[type="text"],
+input[type="email"] {
+  padding: 9px;
+  border: 1px solid #c9c9c9;
+  width: 90%;
+  color: #bababb;
+}
+input[type="text"] {
+  margin-bottom: 15px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus{
+outline: none;
+border-color: #ed5900;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px #f55e009c;
+}
+input::placeholder {
+  color: #bababb;
+  opacity: 1;
+}
+ label {
+  display: flex ;
+  align-items: center;
+  color: #646363;
+
+  font-weight: 600;
+  font-size: 13px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  color: black;
+  border: 1px solid #b8b8b8a9;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+  background-color: #fff;
+  margin-right: 0.5em;
+}
+input[type="checkbox"]:before {
+    position: absolute;
+    content: '';
+    display: block;
+    /* top: 1px; */
+    left: 4px;
+    width: 4px;
+    height: 8px;
+    border-style: solid;
+    border-color:white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  input[type="checkbox"]:checked {
+    FONT-WEIGHT: 200;
+    color: white;
+    border-color: #ed5900;
+    background: #ed5900;
+  }
+    input[type="checkbox"]:checked:before {
+      opacity: 1;
+    }
+
+.link {
+  margin-left: 5px;
+  color: #ed5900;
+  text-decoration: none;
+}
+.link-footer{
+    text-decoration: none;
+    color: #eee;
+}
+.link:hover,
+.link:focus {
+  text-decoration: none;
+  color: #ed5900; 
+}
+.link-footer:focus, .link-footer:hover{
+    text-decoration: none;
+    color: #eee;
+}
+button {
+  background-color: #ed5900;
+  width: 90%;
+  padding: 10px;
+  color: #eee;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.line-gray {
+  height: 1px;
+  background-color: #e8e8efc4;
+  opacity: 1px;
+}
+@media (max-width: 1350px) {
+    .wrapper{
+        display: table;
+        
+    }
+    aside {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+      }
+      .fa-long-arrow-right{
+        transform: rotate(270deg);
+        font-size: 30px;
+       
+    }
+    .emphasizes{
+      margin: 3rem!important;
+      padding-right: 0!important;
+  }
+  .form-control{
+    margin-top: 2rem;
+  }
+    
+}
+@media (max-width: 1110px) and (min-width:830px){
+    .footer-frame{
+        display: table;
+    }
+    .columns {
+        flex: 1;
+        display: flex;
+        margin: 5% 15%;
+        align-items: center;
+      }
+}
+@media (min-width: 1110px) and (max-width: 1350px) {
+    .footer-frame{
+        display: -webkit-box;
+    }
+    
+}
+
+@media(min-width: 1350px){
+    .wrapper{
+        display: flex;
+    }
+    aside {
+        margin: 2% 15% 5% 0%;
+      }
+      .columns{
+        margin: 2rem 0rem 0rem 25%;
+      }
+    
+}
+@media (max-width: 830px) and (min-width:580px) {
+    .columns{
+        display: block;
+        margin: 10%;
+    }
+    .ebook{
+        position: relative;
+        margin: auto;
+        display: flex;
+    }
+    .footer-frame{
+        flex-wrap: wrap;
+    }
+    .logotype{
+        margin: auto;
+    }
+}
+@media (max-width:580px){
+    .social-icons{
+        margin: auto;
+        top: 12%;
+        right: auto;
+        justify-content: center;
+        display: list-item;
+    }
+    .logo-title{
+        margin: 5% auto;
+        display: flex;
+        justify-content: center;
+    }
+    .separator-image{
+        margin:auto;
+    }
+    .columns{
+        flex-direction: column;
+    display: flex;
+    margin: auto;
+    }
+    .ebook{
+        margin: auto;
+        position: relative;
+    }
+    .col1{
+        MARGIN: 5%;
+        width: auto;
+    }
+    h1{
+        width: auto;
+    }
+    
+    
+    .footer-frame>nav>ul{
+        justify-content: center;
+        margin: auto 0 auto -10%;
+    }
+    .footer-frame{
+        flex-direction: column;
+    }
+
+}
+/* Popup Modal */
+/* The Modal (background) */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .caption {
+    background-color: #bd4a03;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    /* border: 1px solid #ed5900; */
+    width: 40%; /* Could be more or less, depending on screen size */
+    color: #eee;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /* The Close Button */
+  .fa-times{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .fa-times:hover,
+  .fa-times:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .emphasizes{
+    color: #ed5900;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;   
+    text-align: center;
+    margin: -1rem 4rem 4rem 4rem;
+    padding-right: 14rem;
+  }
+  .footer-frame{
+      background-color: #4f4f51;
+      color: #eee;
+      height: 120px;
+      display: flex;
+      flex: 1;
+    justify-content: space-around;
+  }
+  .footer-frame>nav{
+    margin: auto;
+  }
+  nav>ul{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin: 3rem;
+  }
+  nav>ul>li{
+    font-size: 12px;
+  }
+  .footer-frame>nav>ul li:nth-child(2):before,.footer-frame>nav>ul li:nth-child(3):before{
+    content: "|";  
+    font-size: 12px;
+    font-weight: 600;
+    transition: .2s;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    color: rgba(150, 150, 150, 0.555);
+  }
+  .logotype{
+    margin: auto;
+    height: 1rem;
+  }
+a[title~="Enlace"]{
+    color: #ed5900;
+}

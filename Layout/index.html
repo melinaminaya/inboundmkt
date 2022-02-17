@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InboundCycle</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="orange-div"></div>
+
+  <header>
+    <div class="logo-title">
+      <img src="img/inboundcycle-logo.png" class="logotype1" alt="InboundCycle">
+    </div>
+
+    <div class="social-div">
+      <ul class="social-icons">
+        <li class="link-media">
+          <a href="https://www.facebook.com/InboundCycle" target="_blank"
+            title="Visita nuestra cuenta de Facebook de InboundCycle">
+            <i class="fa fa-facebook-square"></i>
+          </a>
+        </li>
+        <li class="link-media">
+          <a href="https://twitter.com/inboundcycle" target="_blank" title="Visitar el Twitter de InboundCycle">
+            <i class="fa fa-twitter-square"></i>
+          </a>
+        </li>
+        <li class="link-media">
+          <a href="https://www.linkedin.com/company/2387654" target="_blank"
+            title="Visitar el LinkedIn de InboundCycle">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+  </header>
+  <!-- Separator Image -->
+  <div class="separator-image">
+    <img class="img-separator-size" src="img/separator-image.jpg" alt="fundo de pagina">
+  </div>
+  <!-- Container -->
+  <div class="wrapper">
+    <section width="100%">
+      <div class="columns">
+        <div class="col1">
+          <h1>Lorem ipsum dolor sit amet elit consectetur adipiscing eu ipsum porttitor ligula donec</h1>
+          <div class="line-gray"></div>
+          <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit eu porttitor ligula donec</h3>
+          <p class="paragraph">  Duis blandit tempor facilisis. Curabitur ipsum turpis, <a href="#"
+              title="Enlace de prueba">venenatis</a> et
+            massa id, congue dignissim nibh. Praesent vitae justo vel metus faucibus vehicula. Donec vitae semper eros,
+            et
+            viverra leo. Quisque maximus semper mi, sit amet vehicula quam ultricies eu. Nullam euismod orci sed erat
+            blandit vulputate nec vitae arcu. Integer nec imperdiet sem. Nullam a nibh rhoncus, tincidunt arcu eu, porta
+            erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae semper eros, et
+            viverra leo.</p>
+        </div>
+
+        <img src="img/ebook.png" class="ebook" alt="E-book genérico de InboundCycle">
+
+
+      </div>
+
+      
+    </section>
+
+    
+    <!-- Aside -->
+    <aside width="30%">
+      <!-- Download form -->
+      <form action="post" class="form-control" autocomplete="off"  >
+        <h4>Descargar e-book gratis</h4>
+        <fieldset>
+          <input type="text" name="name" placeholder="Nombre" required="true">
+          <input type="text" name="surname" placeholder="Apellidos" required="true">
+          <input type="email" name="email" placeholder="E-mail" required="true">
+        </fieldset>
+        <fieldset>
+          <div class="input-check" style="display: -webkit-inline-box;">
+            <input type="checkbox" name="legal" required="true">
+            <label>Acepto la <a href="#" class="link" title="Lea nuestra política de privacidad">política de
+                privacidad</a>*</label>
+
+          </div>
+          <div class="input-check" style="display: -webkit-inline-box;">
+            <input type="checkbox" name="subscription">
+            <label>Suscríbeme al blog</label>
+          </div>
+        </fieldset>
+        <button type="button" id="btDescargar" onclick="click()">Descargar</button>
+      </form>
+    </aside>
+
+
+  </div>
+  <section>
+    
+    <div class="emphasizes">
+      
+    
+      Rellena el formulario para descargar la guía <i class="fa fa-long-arrow-right"></i>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-frame">
+      <!-- Logotype -->
+      <img src="img/inboundcycle-logo-small.png" class="logotype" alt="InboundCycle">
+      <!-- Legal menu -->
+      <nav>
+        <ul>
+          <li><small>InboundCycle © 2015</small></li>
+          <li><a class="link-footer" href="#" title="Lea nuestra política de privacidad">Política de Privacidad</a></li>
+          <li><a class="link-footer" href="#" title="Lea el aviso legal">Aviso Legal</a></li>
+        </ul>
+      </nav>
+      <!-- Copyright -->
+
+    </div>
+  </footer>
+  <!-- Pop-up -->
+  <div class="popup fade" id="myModal">
+    <div class="caption">
+      <i class="fa fa-times"></i>
+      <p>¡Muchas gracias!</p>
+    </div>
+  </div>
+
+  <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("btDescargar");
+    var span = document.getElementsByClassName("fa-times")[0];
+    var form = document.getElementsByClassName("form-control");
+
+    btn.onclick = function () {
+      
+        modal.style.display = "block";
+      
+      
+      
+      
+    }
+    
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+   
+    
+  </script>
+</body>
+
+</html>
